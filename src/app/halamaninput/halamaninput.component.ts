@@ -21,4 +21,6 @@ export class HalamaninputComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }
