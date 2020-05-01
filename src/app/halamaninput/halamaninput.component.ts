@@ -34,11 +34,12 @@ export class HalamaninputComponent implements OnInit {
       this.datanama.push(a);
       this.datap.push(b);
       this.j+=1;
-    // this.namajurusan = this.a;
-    // this.penjelasanjurusan = this.b;
 
-    // this.variabelglobal.setnamajurusan(this.namajurusan);
-    // this.variabelglobal.setpenjelasanjurusan(this.penjelasanjurusan);
+      this.namajurusan = this.a;
+      this.penjelasanjurusan = this.b;
+
+      this.variabelglobal.setnamajurusan(this.namajurusan);
+      this.variabelglobal.setpenjelasanjurusan(this.penjelasanjurusan);
   }
 
 

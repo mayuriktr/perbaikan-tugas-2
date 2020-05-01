@@ -11,9 +11,25 @@ import { GlobserService } from '../globser.service';
 })
 export class HalamaneditComponent implements OnInit {
 
-  constructor(private route : ActivatedRoute, public variabelglobal : GlobserService) { }
+  a  = "";
+  b = "";
+  j = 0;
+  datanama = [];
+  datap = [];
+  constructor(private route : ActivatedRoute, public variabelglobal : GlobserService) { this.datanama = this.variabelglobal.getnamajurusan();
+    this.datap = this.variabelglobal.getpenjelasanjurusan();
+    this.j = this.variabelglobal.getjumlahnamajurusan();
+  }
 
   ngOnInit() {
   }
 
+  Masukan2(a,b){
+    for(var i = 0; i < this.j; i++){
+      if(this.datanama[i] = this.a){
+        this.datap[i] = this.b;
+        this.variabelglobal.setpenjelasanjurusan(this.b);
+      }
+    }
+  }
 }
