@@ -14,13 +14,22 @@ export class HalamaninputComponent implements OnInit {
 
   namajurusan = "";
   penjelasanjurusan="";
-
+  a  = "";
+  b = "";
 
   constructor(private route : ActivatedRoute, public variabelglobal : GlobserService) { }
 
   ngOnInit() {
   }
 
+  Masukan(){
+    this.namajurusan = this.a;
+    this.penjelasanjurusan = this.b;
+
+    this.variabelglobal.setnamajurusan(this.namajurusan);
   
+  }
+
+
 
 }
