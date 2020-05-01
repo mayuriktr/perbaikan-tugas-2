@@ -25,17 +25,17 @@ export class HalamanlistComponent implements OnInit {
   ngOnInit() {
   }
   
-  list(){
-    this.jum1 = this.variabelglobal.getjumlahnamajurusan();
-    this.jum2 = this.variabelglobal.getjumlahpenjelasanjurusan();
-    for(var i = 0; i < this.jum1; i++){
-      this.datanama[i] = this.variabelglobal.getnamajurusan2(i);
-    }
+  // list(){
+  //   this.jum1 = this.variabelglobal.getjumlahnamajurusan();
+  //   this.jum2 = this.variabelglobal.getjumlahpenjelasanjurusan();
+  //   for(var i = 0; i < this.jum1; i++){
+  //     this.datanama[i] = this.variabelglobal.getnamajurusan2(i);
+  //   }
 
-    for(var i = 0; i<this.jum2;i++){
-      this.datapenjelasan[i] = this.variabelglobal.getpenjelasanjurusan2(i);
-    }
+  //   for(var i = 0; i<this.jum2;i++){
+  //     this.datapenjelasan[i] = this.variabelglobal.getpenjelasanjurusan2(i);
+  //   }
 
-  }
+  // }
 
 }
