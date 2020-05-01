@@ -27,6 +27,9 @@ export class HalamaninputComponent implements OnInit {
     this.penjelasanjurusan = this.b;
 
     this.variabelglobal.setnamajurusan(this.namajurusan);
+    this.variabelglobal.setpenjelasanjurusan(this.penjelasanjurusan);
+
+    
   
   }
 
