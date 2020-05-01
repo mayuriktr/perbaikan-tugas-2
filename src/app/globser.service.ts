@@ -24,7 +24,16 @@ export class GlobserService {
     this.jumlahnamajurusan++;
   }
 
-  public getnamajurusan(){
+  public getjumlahpenjelasanjurusan(){
+    return this.jumlahpenjelasanjurusan;
+  }
+
+  public getjumlahnamajurusan(){
+    return this.jumlahnamajurusan;
+  }
+
+  public getnamajurusan(angka){
+    return this.namajurusan[angka];
     
   }
 
@@ -33,8 +42,15 @@ export class GlobserService {
     this.jumlahpenjelasanjurusan++;
   }
 
-  public getpenjelasanjurusan(){
-
+  public getpenjelasanjurusan(angka){
+    return this.penjelasanjurusan[angka];
   }
+
+  // public printnamajurusan(){
+  //   for(var i = 0; i<this.jumlahnamajurusan; i++){
+      
+  //   }
+  // }
+  
 
 }
