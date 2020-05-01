@@ -13,22 +13,24 @@ export class HalamaneditComponent implements OnInit {
 
   a  = "";
   b = "";
-  j = 0;
+  j1 = 0;
+  j2 = 0;
   datanama = [];
   datap = [];
   constructor(private route : ActivatedRoute, public variabelglobal : GlobserService) { this.datanama = this.variabelglobal.getnamajurusan();
     this.datap = this.variabelglobal.getpenjelasanjurusan();
-    this.j = this.variabelglobal.getjumlahnamajurusan();
+    this.j1 = this.variabelglobal.getjumlahnamajurusan();
+    this.j2 = this.variabelglobal.getjumlahpenjelasanjurusan();
   }
 
   ngOnInit() {
   }
 
   Masukan2(a,b){
-    for(var i = 0; i < this.j; i++){
-      if(this.datanama[i] = this.a){
-        this.datap[i] = this.b;
-        this.variabelglobal.setpenjelasanjurusan(this.b);
+    for(var i = 0; i < this.j1; i++){
+      if(this.datanama[i] == a){
+        this.datap[i] = b;
+        this.variabelglobal.setpenjelasanjurusan2(b,i);
       }
     }
   }
