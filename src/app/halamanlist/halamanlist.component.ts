@@ -10,8 +10,16 @@ import { GlobserService } from '../globser.service';
   styleUrls: ['./halamanlist.component.css']
 })
 export class HalamanlistComponent implements OnInit {
+  datanama = [];
+  datapenjelasan = [];
+  jum = 0;
+  constructor(private route : ActivatedRoute, public variabelglobal : GlobserService) {
+    this.datanama = this.variabelglobal.getnamajurusan();
+    this.datapenjelasan = this.variabelglobal.getpenjelasanjurusan();
+    this.jum = this.variabelglobal.getjumlahnamajurusan();
 
-  constructor(private route : ActivatedRoute, public variabelglobal : GlobserService) { }
+
+   }
 
   ngOnInit() {
   }

@@ -20,7 +20,8 @@ export class GlobserService {
   }
 
   public setnamajurusan(namajurus){
-    this.namajurusan.push(namajurus);
+    // this.namajurusan.push(namajurus);
+    this.namajurusan = namajurus;
     this.jumlahnamajurusan++;
   }
 
@@ -32,18 +33,19 @@ export class GlobserService {
     return this.jumlahnamajurusan;
   }
 
-  public getnamajurusan(angka){
-    return this.namajurusan[angka];
+  public getnamajurusan(){
+    return this.namajurusan;
     
   }
 
   public setpenjelasanjurusan(penjelasjurus){
-    this.penjelasanjurusan.push(penjelasjurus);
+    // this.penjelasanjurusan.push(penjelasjurus);
+    this.penjelasanjurusan = penjelasjurus;
     this.jumlahpenjelasanjurusan++;
   }
 
-  public getpenjelasanjurusan(angka){
-    return this.penjelasanjurusan[angka];
+  public getpenjelasanjurusan(){
+    return this.penjelasanjurusan;
   }
 
   // public printnamajurusan(){
